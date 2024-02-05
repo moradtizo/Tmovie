@@ -1,0 +1,13 @@
+
+<div class="carousel-inner ">
+  <div class="carousel-item " [ngClass]="{'active':f}" data-bs-interval="200" *ngFor="let item of items first as f">
+    <img [src]="'https://image.tmdb.org/t/p/original'+item.backdrop_path "class="d-block w-100" alt="...">
+    <div class="carousel-caption d-none text-light d-md-block">
+      <h5 class="text-info text-black">{{ item.original_title }} <i class= "fa fa-language" aria-hidden="true"></i><span class="mx-2 text-info ">{{ item.original_language }}</span></h5>
+      <p>{{ item.overview }}.</p>
+
+    </div>
+  </div>
+
+</div>
+
